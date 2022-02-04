@@ -155,8 +155,7 @@ public class Test {
 						int hs_index = new ArrayList<>(method_subgraphs).indexOf(hs);
 						if (hs_iter_index >= hs_index)
 							continue;
-						if (hs_iter.contains(str) || donotSplitSet.contains(x.classname))
-						{
+						if (hs_iter.contains(str) || donotSplitSet.contains(x.classname)) {
 							skipIndexes.add(hs_index);
 							// merge two subgraphs with any common method
 							hs_iter.addAll(hs);
@@ -164,27 +163,22 @@ public class Test {
 					}
 				}
 			}
-			for (HashSet<String> hs : method_subgraphs)
-			{
+			for (HashSet<String> hs : method_subgraphs)	{
 				int hs_index = new ArrayList<>(method_subgraphs).indexOf(hs);
 				// Remove the duplicates  and Put the merged entries in a new structure
 				if(!skipIndexes.contains(hs_index))
 					method_subgraphs_updated.add(hs);
 			}
 			Set<String> all_mthd = x.method_scope.keySet();
-			for (String mtd: all_mthd)
-			{
+			for (String mtd: all_mthd)	{
 				boolean found = false;
-				for (HashSet<String> hs : method_subgraphs_updated)
-				{
-					if (hs.contains(mtd))
-					{
+				for (HashSet<String> hs : method_subgraphs_updated)	{
+					if (hs.contains(mtd)) {
 						found = true;
 						break;
 					}
 				}
-				if (!found)
-				{
+				if (!found) {
 					if (donotSplitSet.contains(x.classname)) {
 						// keep single methods in the same subgraph for selected classes
 						if (method_subgraphs_updated.isEmpty()) {
@@ -213,28 +207,19 @@ public class Test {
 				sg.subgraph.addAll(hs);
 				HashSet<MethodFieldUsage> mfu_set = new HashSet<MethodFieldUsage>();
 				if (mfu_pair.containsKey(class_subgraphs.classname))
-				{
 					mfu_set = mfu_pair.get(class_subgraphs.classname);
-				}
-				for (String mthd : hs)
-				{
-					for (MethodFieldUsage mfu : mfu_set)
-					{
-						if (mthd.equals(mfu.method))
-						{
+				for (String mthd : hs)	{
+					for (MethodFieldUsage mfu : mfu_set) {
+						if (mthd.equals(mfu.method)) {
 							sg.field_read.addAll(mfu.global_reads);
 							sg.field_written.addAll(mfu.global_writes);
 						}
 					}
-					for (HashMap.Entry<String, HashSet<Pair<String,String>>> entry : x.external_called_by_M.entrySet())
-					{
+					for (HashMap.Entry<String, HashSet<Pair<String,String>>> entry : x.external_called_by_M.entrySet())	{
 						if (entry.getKey().equals(mthd))
-						{
 							sg.called_map.put(mthd, entry.getValue());
-						}
 					}
 				}
-	
 				if (method_subgraphs_field_updated.isEmpty())
 				{
 					Subgraph s_temp = new Subgraph();
@@ -256,10 +241,8 @@ public class Test {
 								set2.addAll(sg.field_read);
 						set2.addAll(sg.field_written);
 						set1.retainAll(set2);
-						if (set1.size() > 0)
-						{
+						if (set1.size() > 0) {
 							//merge
-							
 							s.subgraph.addAll(sg.subgraph);
 							s.field_read.addAll(sg.field_read);
 							s.field_written.addAll(sg.field_written);
@@ -267,10 +250,8 @@ public class Test {
 							found = true;
 							break;
 						}
-						
 					}
-					if (!found)
-					{
+					if (!found)	{
 						Subgraph s_temp = new Subgraph();
 						s_temp.subgraph.addAll(hs);
 						s_temp.field_read = sg.field_read;
@@ -285,12 +266,8 @@ public class Test {
 				HashSet<String> caller_set = new HashSet<String>();
 				for (String mthd : hs.subgraph)
 				{
-					
-					for (HashMap.Entry<String,HashSet<Pair<String,String>>> entry : x.external_callers_of_M.entrySet())
-					{
-						
-						if (entry.getKey().equals(mthd))
-						{
+					for (HashMap.Entry<String,HashSet<Pair<String,String>>> entry : x.external_callers_of_M.entrySet())	{
+						if (entry.getKey().equals(mthd)) {
 							hs.caller_map.put(mthd, entry.getValue());
 							for (Pair<String, String> p : entry.getValue())
 							{
@@ -314,7 +291,6 @@ public class Test {
 				class_subgraphs_set.add(class_subgraphs);
 		}
 	}
-	
 	public void getAllEdges(CompilationUnit cu, CallGraphInfo cgi) throws IOException
 	{
 		NeededByClasses nbc = new NeededByClasses();
@@ -325,7 +301,6 @@ public class Test {
 		nbc.field_usage = cgi.mfu_set;
 		ClassOrInterfaceDeclaration classX;
 		classnames.add(nbc.classname);
-		
 		try
 		{
 		classX = cu.getInterfaceByName(nbc.classname).get();
@@ -355,23 +330,18 @@ public class Test {
 						nbc.internal_callers_of_M.put(value, temp);
 					}
 				}
-				
-				if (nbc.internal_called_by_M.containsKey(entry.getKey()))
-				{
+				if (nbc.internal_called_by_M.containsKey(entry.getKey())) 	{
 					HashSet<String> temp =  nbc.internal_called_by_M.get(entry.getKey());
 					temp.addAll(entry.getValue());
 					nbc.internal_called_by_M.replace(entry.getKey(), temp);
 				}
-				else
-				{
+				else {
 					HashSet temp = new HashSet<String>();
 					temp.addAll(entry.getValue());
 					nbc.internal_called_by_M.put(entry.getKey(), temp);
 				}
 			}
-			
-			catch(NullPointerException e)
-			{
+			catch(NullPointerException e) {
 				//TODO: Handle
 			}
 		}
@@ -424,8 +394,6 @@ public class Test {
 						for (Pair<String,String> pair: entry.getValue()) {
 							temp.add(pair);
 						}
-
-//						temp.putAll(entry.getValue());
 						curr.external_called_by_M.replace(entry.getKey().b, temp);
 					}
 					break;
@@ -492,8 +460,7 @@ public class Test {
 						needed_by_classes.add(new_nbc);
 					}
 				}
-				catch (NullPointerException e)
-				{
+				catch (NullPointerException e)				{
 					//TODO: handle
 				}
 			}
@@ -569,7 +536,6 @@ public class Test {
 			Iterator<ParseResult<CompilationUnit>> prIt = parseResults.iterator();
 			List<CompilationUnit> allCus = parseResults.stream().filter(ParseResult::isSuccessful)
 					.map(r -> r.getResult().get()).collect(Collectors.toList());
-		
 			Iterator<CompilationUnit> cuIter = allCus.iterator();
 			
 			/* Pre analysis to store the classname of the compilationunit
@@ -657,16 +623,12 @@ public class Test {
 				    	}
 					    classdetails.name = n;
 				   });
-			    
 				FieldDeclaration result = null;
 				  List<FieldDeclaration> fields = cuI.findAll(FieldDeclaration.class);
 				  for (FieldDeclaration field : fields) {
-//					  
 //					  //////////////////////////////////////////////////
 //					  // Iterate over class fields
 //					  /////////////////////////////////////////////////
-//
-//					  
 //					  // TODO: Resolve error in above commented condition
 					  if (field.getBegin().isPresent()) {
 						  // Get all fields
@@ -782,24 +744,19 @@ public class Test {
 		{
 			String calling_class = dep.getKey();
 			
-			for (String val : dep.getValue())
-			{
-				if (external_usage_freq.containsKey(val))
-				{
+			for (String val : dep.getValue()) {
+				if (external_usage_freq.containsKey(val)) {
 					external_usage_freq.replace(val, external_usage_freq.get(val) + 1);
 				}
-				else
-				{
+				else {
 					external_usage_freq.put(val, 1);
 				}
-				if (unique_class_calls.containsKey(val))
-				{
+				if (unique_class_calls.containsKey(val)) {
 					Set class_set = unique_class_calls.get(val);
 					class_set.add(calling_class);
 					unique_class_calls.replace(val, class_set);
 				}
-				else
-				{
+				else {
 					Set<String> s = new HashSet<String>();
 					s.add(calling_class);
 					unique_class_calls.put(val, s);
@@ -812,8 +769,7 @@ public class Test {
 		    } catch (IOException e) {
 		       // TODO Auto-generated catch block
 		       e.printStackTrace();
-		    }
-
+	    }
 		analyzeShiftableCode();
 //		writeCallDetails();
 	file.close();
@@ -917,30 +873,22 @@ public class Test {
 							break;
 						}
 					}
-					
-					
 					for (HashMap.Entry<String,HashSet<Pair<String, String>>> entry : sg.caller_map.entrySet())
 					{
-						if (entry.getKey().equals(sg_value))
-						{
+						if (entry.getKey().equals(sg_value)) {
 							Map method_map = new LinkedHashMap();
 							int t = 0;
-							for (Pair<String,String> calls : entry.getValue())
-							{
+							for (Pair<String,String> calls : entry.getValue())	{
 								t++;
 								Map class_method_call = new LinkedHashMap(3);
 								class_method_call.put("method", calls.b);
 								class_method_call.put("class", calls.a);
 								HashSet<String> clusters = pc.getClusters(calls.a);
 								for (String cluster : clusters)
-								{
 									class_method_call.put("cluster", cluster);
-								}
 								boolean present = false;
-								for (int index = 0 ; index < all_caller_class.size(); index++)
-								{
-									if (all_caller_class.get(index).getAsString().contains(calls.a))
-									{
+								for (int index = 0 ; index < all_caller_class.size(); index++)	{
+									if (all_caller_class.get(index).getAsString().contains(calls.a)) {
 										present = true;
 										break;
 									}
@@ -1040,5 +988,4 @@ public class Test {
 		t.mainAnalysis(args);
 		t.printAllSubgraphs();
 	}
-
 }
