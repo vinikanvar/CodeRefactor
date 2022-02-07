@@ -565,11 +565,12 @@ public class Test {
 					totalm += m.size();
 						 }
 				analyzed_classes.add(cgi.getClassname_cg());
+				System.out.println("Analyzed class "+cgi.getClassname_cg()+" -- "+cuI.getPackageDeclaration().toString());
 			}
 			System.out.println("Classes analyzed: "+ analyzed_classes.size());
 			System.out.println("method: "+totalm + " -- fields: "+totalf);
-//			if (true)
-//				continue;
+			if (true)
+				continue;
 			Iterator<CompilationUnit> cIter = allCus.iterator();
 			while (cIter.hasNext()) {
 				CompilationUnit cuI = cIter.next();
@@ -691,7 +692,6 @@ public class Test {
 				    jsonObject3.put("field" + i , m);
 				}
 				jsonObject.put("fields", jsonObject3);
-				
 				jsonObject.put("num_methods", classdetails.total_methods);
 				int j = 0;
 				for(MethodDeclaration mthd :classdetails.all_methods)
@@ -729,21 +729,14 @@ public class Test {
 			        	l++;
 			        	m1.put("Parameter"+l, p.toString());
 			        }
-
 					jsonObject4.put("constructor" + k , m1);
 				}
 				jsonObject.put("constructors", jsonObject4);
-		//jsonObject.put("constructors ", classdetails.all_constructors);
 				jsonObjectmain.put("class"+class_count, jsonObject);
-				  
-				    //System.out.println("JSON file created: "+jsonObject);
 			}
 		}
-		for (HashMap.Entry<String,ArrayList<String>> dep : dependency_map.entrySet())
-		//for (Pair<String, ArrayList<String>> dep : dependency_map)
-		{
+		for (HashMap.Entry<String,ArrayList<String>> dep : dependency_map.entrySet()) {
 			String calling_class = dep.getKey();
-			
 			for (String val : dep.getValue()) {
 				if (external_usage_freq.containsKey(val)) {
 					external_usage_freq.replace(val, external_usage_freq.get(val) + 1);
