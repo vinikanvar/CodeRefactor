@@ -569,8 +569,8 @@ public class Test {
 			}
 			System.out.println("Classes analyzed: "+ analyzed_classes.size());
 			System.out.println("method: "+totalm + " -- fields: "+totalf);
-			if (true)
-				continue;
+//			if (true)
+//				continue;
 			Iterator<CompilationUnit> cIter = allCus.iterator();
 			while (cIter.hasNext()) {
 				CompilationUnit cuI = cIter.next();
