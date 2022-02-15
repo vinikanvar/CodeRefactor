@@ -54,7 +54,7 @@ public class ClusterCreator {
 	String curr_class;
 	JSONParser jsonParser = new JSONParser();
 	//Change to desired output folder
-	String output_dir = "/home/ridhi/Documents/clusters/petSpring/";
+	String output_dir = "/home/ridhi/Documents/clusters/mayocat/";
 	
 	public void setClass(String n)
 	{

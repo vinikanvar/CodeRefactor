@@ -231,30 +231,30 @@ public class ClassEditor {
 
 					
 					ClusterCreator cluster_creator = new ClusterCreator();
-					Thread t1 = new Thread(new Runnable() {
-						public void run() {
-							try {
-								cluster_creator.createNewClass(cuI, srcClass, classname, src_cluster);
-							} catch (IOException | ParseException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
-						}
-					});
-					Thread t2 = new Thread(new Runnable() {
-					public void run() {
-					   try {
-						   cluster_creator.createNewClass(cuI, APIClass, APIname, dst_cluster_final);
-						} catch (IOException | ParseException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-						}
-					   }
-					});
-					t1.start();
-					t2.start();
-//					cluster_creator.createNewClass(cuI, srcClass, classname, src_cluster);
-//					cluster_creator.createNewClass(cuI, APIClass, APIname, dst_cluster);
+//					Thread t1 = new Thread(new Runnable() {
+//						public void run() {
+//							try {
+//								cluster_creator.createNewClass(cuI, srcClass, classname, src_cluster);
+//							} catch (IOException | ParseException e) {
+//								// TODO Auto-generated catch block
+//								e.printStackTrace();
+//							}
+//						}
+//					});
+//					Thread t2 = new Thread(new Runnable() {
+//					public void run() {
+//					   try {
+//						   cluster_creator.createNewClass(cuI, APIClass, APIname, dst_cluster_final);
+//						} catch (IOException | ParseException e) {
+//						// TODO Auto-generated catch block
+//						e.printStackTrace();
+//						}
+//					   }
+//					});
+//					t1.start();
+//					t2.start();
+					cluster_creator.createNewClass(cuI, srcClass, classname, src_cluster);
+					cluster_creator.createNewClass(cuI, APIClass, APIname, dst_cluster);
 				}
 				System.out.println(cgi.getClassname_cg());
 			}
@@ -538,31 +538,31 @@ public class ClassEditor {
 		String dst_clusterFinal = dst_cluster;
 		ClusterCreator cluster_creator = new ClusterCreator();
 		
-		Thread t1 = new Thread(new Runnable() {
-			public void run() {
-				try {
-					cluster_creator.createNewClass(src, srcClass, srcClassName, src_cluster);			
-					} catch (IOException | ParseException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-		});
-		Thread t2 = new Thread(new Runnable() {
-		public void run() {
-		   try {
-				cluster_creator.createNewClass(src, APIClass, APInameFinal, dst_clusterFinal);
-			} catch (IOException | ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			}
-		   }
-		});
-		t1.start();
-		t2.start();
-		
-//		cluster_creator.createNewClass(src, srcClass, srcClassName, src_cluster);
-//		cluster_creator.createNewClass(src, APIClass, APIname, dst_cluster);
+//		Thread t1 = new Thread(new Runnable() {
+//			public void run() {
+//				try {
+//					cluster_creator.createNewClass(src, srcClass, srcClassName, src_cluster);			
+//					} catch (IOException | ParseException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
+//			}
+//		});
+//		Thread t2 = new Thread(new Runnable() {
+//		public void run() {
+//		   try {
+//				cluster_creator.createNewClass(src, APIClass, APInameFinal, dst_clusterFinal);
+//			} catch (IOException | ParseException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//			}
+//		   }
+//		});
+//		t1.start();
+//		t2.start();
+//		
+		cluster_creator.createNewClass(src, srcClass, srcClassName, src_cluster);
+		cluster_creator.createNewClass(src, APIClass, APIname, dst_cluster);
 		
 	}
 	

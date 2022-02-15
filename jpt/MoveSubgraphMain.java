@@ -140,27 +140,27 @@ public class MoveSubgraphMain {
 								}
 							}
 							
-							Thread t1 = new Thread(new Runnable() {
-								public void run() {
-									try {
-										for (HashSet<Subgraph> sg_set : subgraph_set)
-										{
-											if (entry.getKey().equals("QuoteData"))
-											{
-												for (Subgraph s:sg_set)
-													System.out.println("Passed subgraph  :" + s.subgraph);
-											}
-											class_editor.APIBuilder(cuI, sg_set, cnameFinal, fpath);
-											
-										}
-										sg_map.put(cnameFinal, subgraph_set);										
-										} catch (IOException | ParseException e) {
-										// TODO Auto-generated catch block
-										e.printStackTrace();
-									}
-								}
-							});
-							t1.start();
+//							Thread t1 = new Thread(new Runnable() {
+//								public void run() {
+//									try {
+//										for (HashSet<Subgraph> sg_set : subgraph_set)
+//										{
+////											if (entry.getKey().equals("QuoteData"))
+////											{
+////												for (Subgraph s:sg_set)
+////													System.out.println("Passed subgraph  :" + s.subgraph);
+////											}
+//											class_editor.APIBuilder(cuI, sg_set, cnameFinal, fpath);
+//											
+//										}
+//										sg_map.put(cnameFinal, subgraph_set);										
+//										} catch (IOException | ParseException e) {
+//										// TODO Auto-generated catch block
+//										e.printStackTrace();
+//									}
+//								}
+//							});
+//							t1.start();
 //							for (HashSet<Subgraph> sg_set : subgraph_set)
 //							{
 //								if (entry.getKey().equals("QuoteData"))
@@ -176,40 +176,40 @@ public class MoveSubgraphMain {
 					}
 				}
 				
-				Thread t2 = new Thread(new Runnable() {
-					public void run() {
-						try {
-							for (HashMap.Entry<String, HashSet<Subgraph>> entry : subgraph_map.entrySet())
-							{
-								if (cnameFinal != null)
-								{
-									String src_cluster = pc.getCluster(cnameFinal);
-									for (Subgraph sg : entry.getValue())
-									{
-										if (cnameFinal.equals(sg.dst_class))
-											class_editor.editTarget(cuI, entry.getKey(), src_cluster, fpath[2]);
-									}
-								}
-							}								
-						} catch (IOException | ParseException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						}
-					}
-				});
-				t2.start();
-//				for (HashMap.Entry<String, HashSet<Subgraph>> entry : subgraph_map.entrySet())
-//				{
-//					if (cname != null)
-//					{
-//						String src_cluster = pc.getCluster(cname);
-//						for (Subgraph sg : entry.getValue())
-//						{
-//							if (cname.equals(sg.dst_class))
-//								class_editor.editTarget(cuI, entry.getKey(), src_cluster, fpath[2]);
+//				Thread t2 = new Thread(new Runnable() {
+//					public void run() {
+//						try {
+//							for (HashMap.Entry<String, HashSet<Subgraph>> entry : subgraph_map.entrySet())
+//							{
+//								if (cnameFinal != null)
+//								{
+//									String src_cluster = pc.getCluster(cnameFinal);
+//									for (Subgraph sg : entry.getValue())
+//									{
+//										if (cnameFinal.equals(sg.dst_class))
+//											class_editor.editTarget(cuI, entry.getKey(), src_cluster, fpath[2]);
+//									}
+//								}
+//							}								
+//						} catch (IOException | ParseException e) {
+//							// TODO Auto-generated catch block
+//							e.printStackTrace();
 //						}
 //					}
-//				}
+//				});
+//				t2.start();
+				for (HashMap.Entry<String, HashSet<Subgraph>> entry : subgraph_map.entrySet())
+				{
+					if (cname != null)
+					{
+						String src_cluster = pc.getCluster(cname);
+						for (Subgraph sg : entry.getValue())
+						{
+							if (cname.equals(sg.dst_class))
+								class_editor.editTarget(cuI, entry.getKey(), src_cluster, fpath[2]);
+						}
+					}
+				}
 				
 				
 			}

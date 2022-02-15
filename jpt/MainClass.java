@@ -38,8 +38,11 @@ public class MainClass {
 	    file[1] = jarFolder.getSelectedFile().getPath().toString();
 	    file[2] = jsonFolder.getSelectedFile().getPath().toString();
 	    t.main(file);
+	    System.out.println(" t . Main Analysis finished");
 	    cc.main(file);
+	    System.out.println(" cluster creator finished");
 	    msm.main(file);
+	    System.out.println(" Move finished");
 	    Timestamp timestampend = new Timestamp(System.currentTimeMillis());	
 	    System.out.println("Time taken in millisec: "+(timestampend.getTime() - timestampbegin.getTime()));
 	    System.out.println("Time taken in sec: "+((timestampend.getTime() - timestampbegin.getTime())/1000.0));
@@ -59,8 +62,8 @@ public class MainClass {
 	    
 	    try {
 			t.main(file);
-			cc.main(file);
-			msm.main(file);
+			//cc.main(file);
+			//msm.main(file);
 		} catch (IOException | ParseException | org.json.simple.parser.ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

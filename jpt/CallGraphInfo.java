@@ -868,7 +868,7 @@ public void buildCallGraph(CompilationUnit compilationunit, HashMap<String, Hash
 		String fieldname = field.getVariables().toString();
 		fieldname = fieldname.substring(1, fieldname.length()-1);
 		if (fieldname.contains("="))
-		fieldname = fieldname.substring(0, fieldname.indexOf('='));
+			fieldname = fieldname.substring(0, fieldname.indexOf('='));
 		field_set.add(fieldname);
 		Type type = field.getElementType();
 		if (type.isClassOrInterfaceType())
