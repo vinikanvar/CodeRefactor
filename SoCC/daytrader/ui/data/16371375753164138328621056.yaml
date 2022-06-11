@@ -1,0 +1,1305 @@
+---
+swagger: "2.0"
+info:
+  version: "0.1"
+  title: "Utility_group_service"
+paths:
+  /TradeConfig/getprimiterations:
+    get:
+      operationId: "getprimiterations"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /TradeConfig/setconfigparam:
+    post:
+      operationId: "setconfigparam"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/rndemail:
+    post:
+      operationId: "rndemail"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /TradeConfig/setlongrun:
+    post:
+      operationId: "setlongrun"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/incrementscenariocount:
+    post:
+      operationId: "incrementscenariocount"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/getlongrun:
+    get:
+      operationId: "getlongrun"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "boolean"
+  /TradeConfig/setuseremoteejbinterface:
+    post:
+      operationId: "setuseremoteejbinterface"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /Log/log_settrace:
+    post:
+      operationId: "log_settrace"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /Log/error:
+    post:
+      operationId: "error"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/rndfullname:
+    post:
+      operationId: "rndfullname"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /Log/dotrace:
+    post:
+      operationId: "dotrace"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "boolean"
+  /TradeConfig/getpercentsenttowebsocket:
+    get:
+      operationId: "getpercentsenttowebsocket"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /TradeConfig/setwebinterface:
+    post:
+      operationId: "setwebinterface"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/useremoteejbinterface:
+    post:
+      operationId: "useremoteejbinterface"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "boolean"
+  /TradeConfig/rndsymbols:
+    post:
+      operationId: "rndsymbols"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /FinancialUtils/printgainhtml:
+    post:
+      operationId: "printgainhtml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /Log/log:
+    post:
+      operationId: "log"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /Log/trace:
+    post:
+      operationId: "trace"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/rndsymbol:
+    post:
+      operationId: "rndsymbol"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /TradeConfig/getorderfee:
+    get:
+      operationId: "getorderfee"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /TimerStat/getavgsecs:
+    get:
+      operationId: "getavgsecs"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /FinancialUtils/computegainpercent:
+    post:
+      operationId: "computegainpercent"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "number"
+  /TimerStat/getminsecs:
+    get:
+      operationId: "getminsecs"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /KeyBlock$KeyBlockIterator/keyblock$keyblockiterator:
+    post:
+      operationId: "keyblock$keyblockiterator"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "this$0Id"
+        in: "query"
+        description: "int this$0Id"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/rndcreditcard:
+    post:
+      operationId: "rndcreditcard"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /MDBStats/getinstance:
+    get:
+      operationId: "getinstance"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /KeyBlock/keyblock:
+    post:
+      operationId: "keyblock"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "min"
+        in: "query"
+        description: "int min"
+        required: true
+        type: "integer"
+      - name: "max"
+        in: "query"
+        description: "int max"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/getactiontrace:
+    get:
+      operationId: "getactiontrace"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "boolean"
+  /TradeConfig/tradeconfig:
+    post:
+      operationId: "tradeconfig"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/setruntimemode:
+    post:
+      operationId: "setruntimemode"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TimerStat/getmaxsecs:
+    get:
+      operationId: "getmaxsecs"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /Log/debug:
+    post:
+      operationId: "debug"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/getorderprocessingmode:
+    get:
+      operationId: "getorderprocessingmode"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /TradeConfig/setmax_users:
+    post:
+      operationId: "setmax_users"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /CompleteOrderThread/completeorderthread:
+    post:
+      operationId: "completeorderthread"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "query"
+        description: "java.lang.Integer id"
+        required: true
+        type: "integer"
+      - name: "twoPhase"
+        in: "query"
+        description: "boolean twoPhase"
+        required: true
+        type: "boolean"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/getpage:
+    get:
+      operationId: "getpage"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /TradeConfig/setmarketsummaryinterval:
+    post:
+      operationId: "setmarketsummaryinterval"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/rnduserid:
+    post:
+      operationId: "rnduserid"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /TradeConfig/getmarketsummaryinterval:
+    get:
+      operationId: "getmarketsummaryinterval"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /TradeConfig/incrementselldeficit:
+    post:
+      operationId: "incrementselldeficit"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/getdisplayorderalerts:
+    get:
+      operationId: "getdisplayorderalerts"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "boolean"
+  /MDBStats/addtiming:
+    post:
+      operationId: "addtiming"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "type"
+        in: "query"
+        description: "java.lang.String type"
+        required: true
+        type: "string"
+      - name: "sendTime"
+        in: "query"
+        description: "long sendTime"
+        required: true
+        type: "integer"
+      - name: "recvTime"
+        in: "query"
+        description: "long recvTime"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "integer"
+  /Log/traceexit:
+    post:
+      operationId: "traceexit"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/settrace:
+    post:
+      operationId: "settrace"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/getupdatequoteprices:
+    get:
+      operationId: "getupdatequoteprices"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "boolean"
+  /TradeConfig/getmax_quotes:
+    get:
+      operationId: "getmax_quotes"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /Log/printcollection:
+    post:
+      operationId: "printcollection"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/setorderprocessingmode:
+    post:
+      operationId: "setorderprocessingmode"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /FinancialUtils/computegain:
+    post:
+      operationId: "computegain"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "number"
+  /TradeConfig/getruntimemode:
+    get:
+      operationId: "getruntimemode"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /MDBStats/reset:
+    post:
+      operationId: "reset"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /FinancialUtils/printgainpercenthtml:
+    post:
+      operationId: "printgainpercenthtml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /Log/log_log:
+    post:
+      operationId: "log_log"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/setpublishquotepricechange:
+    post:
+      operationId: "setpublishquotepricechange"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/getmax_users:
+    get:
+      operationId: "getmax_users"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /TradeConfig/rndfloat:
+    post:
+      operationId: "rndfloat"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "number"
+  /TradeConfig/rndbalance:
+    post:
+      operationId: "rndbalance"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /TradeConfig/setpercentsenttowebsocket:
+    post:
+      operationId: "setpercentsenttowebsocket"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/getrandompricechangefactor:
+    get:
+      operationId: "getrandompricechangefactor"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /Log/doactiontrace:
+    post:
+      operationId: "doactiontrace"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "boolean"
+  /TimerStat/getcount:
+    get:
+      operationId: "getcount"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /TradeConfig/setactiontrace:
+    post:
+      operationId: "setactiontrace"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /FinancialUtils/financialutils:
+    post:
+      operationId: "financialutils"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/setmax_quotes:
+    post:
+      operationId: "setmax_quotes"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/setdisplayorderalerts:
+    post:
+      operationId: "setdisplayorderalerts"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/getpublishquotepricechange:
+    get:
+      operationId: "getpublishquotepricechange"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "boolean"
+  /TradeConfig/rndint:
+    post:
+      operationId: "rndint"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "integer"
+  /TradeConfig/gettrace:
+    get:
+      operationId: "gettrace"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "boolean"
+  /TimerStat/timerstat:
+    post:
+      operationId: "timerstat"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/getuserid:
+    get:
+      operationId: "getuserid"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /TradeConfig/rndnewuserid:
+    post:
+      operationId: "rndnewuserid"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /TradeConfig/getscenarioaction:
+    get:
+      operationId: "getscenarioaction"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /Log/traceenter:
+    post:
+      operationId: "traceenter"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/setprimiterations:
+    post:
+      operationId: "setprimiterations"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfig/rndbigdecimal:
+    post:
+      operationId: "rndbigdecimal"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "number"
+  /Log/log_setactiontrace:
+    post:
+      operationId: "log_setactiontrace"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /FinancialUtils/computeholdingstotal:
+    post:
+      operationId: "computeholdingstotal"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "integer"
+  /TradeConfig/rndaddress:
+    post:
+      operationId: "rndaddress"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /TradeConfig/rndboolean:
+    post:
+      operationId: "rndboolean"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "boolean"
+  /TradeConfig/rndquantity:
+    post:
+      operationId: "rndquantity"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "number"
+definitions: {}
+

@@ -1,0 +1,1946 @@
+---
+swagger: "2.0"
+info:
+  version: "0.1"
+  title: "ProfileID_service"
+paths:
+  /AccountDataBean/getprofileid:
+    get:
+      operationId: "getprofileid"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /PingJDBCRead2JSP/pingjdbcread2jsp_dopost:
+    post:
+      operationId: "pingjdbcread2jsp_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeAppJSF/logout:
+    post:
+      operationId: "logout"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /TradeServletAction/dobuy:
+    post:
+      operationId: "dobuy"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /QuoteData/quotedata_getsymbol:
+    get:
+      operationId: "quotedata_getsymbol"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /QuoteDataBean/gethigh:
+    get:
+      operationId: "gethigh"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /TradeServletAction/dohome:
+    post:
+      operationId: "dohome"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2Session2EntityCollection/pingservlet2session2entitycollection_init:
+    post:
+      operationId: "pingservlet2session2entitycollection_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TestServlet/testservlet_dopost:
+    post:
+      operationId: "testservlet_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2Session2Entity2JSP/pingservlet2session2entity2jsp_init:
+    post:
+      operationId: "pingservlet2session2entity2jsp_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeServletAction/doaccountupdate:
+    post:
+      operationId: "doaccountupdate"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2TwoPhase/pingservlet2twophase_init:
+    post:
+      operationId: "pingservlet2twophase_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2DB/pingservlet2db_init:
+    post:
+      operationId: "pingservlet2db_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2DB/pingservlet2db:
+    post:
+      operationId: "pingservlet2db"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2DB/pingservlet2db_dopost:
+    post:
+      operationId: "pingservlet2db_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /QuoteDataBean/quotedatabean:
+    post:
+      operationId: "quotedatabean"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "symbol"
+        in: "query"
+        description: "java.lang.String symbol"
+        required: true
+        type: "string"
+      responses:
+        201:
+          description: "Successful response 201"
+  /QuoteDataBean/getprice:
+    get:
+      operationId: "getprice"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /PingServlet2SessionRemote/pingservlet2sessionremote:
+    post:
+      operationId: "pingservlet2sessionremote"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingJDBCRead/pingjdbcread_dopost:
+    post:
+      operationId: "pingjdbcread_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /DTBroker3MDB/dtbroker3mdb:
+    post:
+      operationId: "dtbroker3mdb"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /OrdersAlertFilter/ordersalertfilter_init:
+    post:
+      operationId: "ordersalertfilter_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeAction/tradeaction:
+    post:
+      operationId: "tradeaction"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "tradeId"
+        in: "query"
+        description: "int tradeId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TestServlet/testservlet:
+    post:
+      operationId: "testservlet"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeActionProducer/tradeactionproducer:
+    post:
+      operationId: "tradeactionproducer"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfigJSF/updateconfig:
+    post:
+      operationId: "updateconfig"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeServletAction/doquotes:
+    post:
+      operationId: "doquotes"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /AccountDataBean/getlogoutcount:
+    get:
+      operationId: "getlogoutcount"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /QuoteDataBean/tostring:
+    post:
+      operationId: "tostring"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /PingJDBCWrite/pingjdbcwrite_doget:
+    get:
+      operationId: "pingjdbcwrite_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+  /PingServlet2TwoPhase/pingservlet2twophase_dopost:
+    post:
+      operationId: "pingservlet2twophase_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingJDBCRead/pingjdbcread_doget:
+    get:
+      operationId: "pingjdbcread_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+  /PingJDBCRead/pingjdbcread_init:
+    post:
+      operationId: "pingjdbcread_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeAction/getaccountdata:
+    get:
+      operationId: "getaccountdata"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "userID"
+        in: "query"
+        description: "java.lang.String userID"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+        500:
+          description: "Error response: 500:java.lang.Exception"
+  /PingServlet2Session2Entity2JSP/pingservlet2session2entity2jsp_dopost:
+    post:
+      operationId: "pingservlet2session2entity2jsp_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2Session2Entity/pingservlet2session2entity_dopost:
+    post:
+      operationId: "pingservlet2session2entity_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /QuoteDataBean/getcompanyname:
+    get:
+      operationId: "getcompanyname"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /PingJDBCWrite/pingjdbcwrite_dopost:
+    post:
+      operationId: "pingjdbcwrite_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2Session2CMROne2One/pingservlet2session2cmrone2one_doget:
+    get:
+      operationId: "pingservlet2session2cmrone2one_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+  /QuoteDataBean/getchange:
+    get:
+      operationId: "getchange"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /TradeAppServlet/tradeappservlet:
+    post:
+      operationId: "tradeappservlet"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeAppJSF/login:
+    post:
+      operationId: "login"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /PingServlet2TwoPhase/pingservlet2twophase:
+    post:
+      operationId: "pingservlet2twophase"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /AccountDataBean/getopenbalance:
+    get:
+      operationId: "getopenbalance"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /PingServlet2SessionLocal/pingservlet2sessionlocal_doget:
+    get:
+      operationId: "pingservlet2sessionlocal_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+  /TradeSLSBBean$quotePriceComparator/tradeslsbbean$quotepricecomparator:
+    post:
+      operationId: "tradeslsbbean$quotepricecomparator"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "this$0Id"
+        in: "query"
+        description: "int this$0Id"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeAction/tradeaction_resettrade:
+    post:
+      operationId: "tradeaction_resettrade"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "deleteAll"
+        in: "query"
+        description: "boolean deleteAll"
+        required: true
+        type: "boolean"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "integer"
+        500:
+          description: "Error response: 500:java.lang.Exception"
+  /PingServlet2SessionRemote/pingservlet2sessionremote_doget:
+    get:
+      operationId: "pingservlet2sessionremote_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+  /DTBroker3MDB/dtbroker3mdb_onmessage:
+    post:
+      operationId: "dtbroker3mdb_onmessage"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2Session2CMROne2Many/pingservlet2session2cmrone2many_doget:
+    get:
+      operationId: "pingservlet2session2cmrone2many_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+  /OrdersAlertFilter/ordersalertfilter:
+    post:
+      operationId: "ordersalertfilter"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeAppJSF/tradeappjsf:
+    post:
+      operationId: "tradeappjsf"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeServletAction/tradeservletaction:
+    post:
+      operationId: "tradeservletaction"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeAction/getorders:
+    get:
+      operationId: "getorders"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "userID"
+        in: "query"
+        description: "java.lang.String userID"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+        500:
+          description: "Error response: 500:java.lang.Exception"
+  /TradeServletAction/domarketsummary:
+    post:
+      operationId: "domarketsummary"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2SessionLocal/pingservlet2sessionlocal_dopost:
+    post:
+      operationId: "pingservlet2sessionlocal_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeAction/buy:
+    post:
+      operationId: "buy"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "userID"
+        in: "query"
+        description: "java.lang.String userID"
+        required: true
+        type: "string"
+      - name: "symbol"
+        in: "query"
+        description: "java.lang.String symbol"
+        required: true
+        type: "string"
+      - name: "quantity"
+        in: "query"
+        description: "double quantity"
+        required: true
+        type: "number"
+      - name: "orderProcessingMode"
+        in: "query"
+        description: "int orderProcessingMode"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "integer"
+        500:
+          description: "Error response: 500:java.lang.Exception"
+  /MarketSummaryJSF/marketsummaryjsf:
+    post:
+      operationId: "marketsummaryjsf"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2Session2CMROne2Many/pingservlet2session2cmrone2many:
+    post:
+      operationId: "pingservlet2session2cmrone2many"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingJDBCRead2JSP/pingjdbcread2jsp_init:
+    post:
+      operationId: "pingjdbcread2jsp_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /QuoteDataBean/getlow:
+    get:
+      operationId: "getlow"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /AccountDataBean/getaccountid:
+    get:
+      operationId: "getaccountid"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /PingJDBCRead/pingjdbcread:
+    post:
+      operationId: "pingjdbcread"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeAction/getclosedorders:
+    get:
+      operationId: "getclosedorders"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "userID"
+        in: "query"
+        description: "java.lang.String userID"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+        500:
+          description: "Error response: 500:java.lang.Exception"
+  /TradeBuildDB/tradebuilddb:
+    post:
+      operationId: "tradebuilddb"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "outId"
+        in: "query"
+        description: "int outId"
+        required: true
+        type: "integer"
+      - name: "ddlFileId"
+        in: "query"
+        description: "int ddlFileId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /QuoteDataBean/getsymbol:
+    get:
+      operationId: "getsymbol"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /TradeAppJSF/register:
+    post:
+      operationId: "register"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /TradeConfigJSF/tradeconfigjsf_resettrade:
+    post:
+      operationId: "tradeconfigjsf_resettrade"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /PingServlet2Session2Entity2JSP/pingservlet2session2entity2jsp_doget:
+    get:
+      operationId: "pingservlet2session2entity2jsp_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+  /QuoteDataBean/getvolume:
+    get:
+      operationId: "getvolume"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /QuoteDataBean/tohtml:
+    post:
+      operationId: "tohtml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /TradeConfigJSF/populatedatabase:
+    post:
+      operationId: "populatedatabase"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /QuoteData/quotedata:
+    post:
+      operationId: "quotedata"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "open"
+        in: "query"
+        description: "java.math.BigDecimal open"
+        required: true
+        type: "number"
+      - name: "price"
+        in: "query"
+        description: "java.math.BigDecimal price"
+        required: true
+        type: "number"
+      - name: "symbol"
+        in: "query"
+        description: "java.lang.String symbol"
+        required: true
+        type: "string"
+      - name: "high"
+        in: "query"
+        description: "java.math.BigDecimal high"
+        required: true
+        type: "number"
+      - name: "low"
+        in: "query"
+        description: "java.math.BigDecimal low"
+        required: true
+        type: "number"
+      - name: "companyName"
+        in: "query"
+        description: "java.lang.String companyName"
+        required: true
+        type: "string"
+      - name: "volumeId"
+        in: "query"
+        description: "int volumeId"
+        required: true
+        type: "integer"
+      - name: "changeId"
+        in: "query"
+        description: "int changeId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /AccountDataBean/accountdatabean:
+    post:
+      operationId: "accountdatabean"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "loginCount"
+        in: "query"
+        description: "int loginCount"
+        required: true
+        type: "integer"
+      - name: "logoutCount"
+        in: "query"
+        description: "int logoutCount"
+        required: true
+        type: "integer"
+      - name: "lastLogin"
+        in: "query"
+        description: "java.util.Date lastLogin"
+        required: true
+        type: "string"
+      - name: "creationDate"
+        in: "query"
+        description: "java.util.Date creationDate"
+        required: true
+        type: "string"
+      - name: "balance"
+        in: "query"
+        description: "java.math.BigDecimal balance"
+        required: true
+        type: "number"
+      - name: "openBalance"
+        in: "query"
+        description: "java.math.BigDecimal openBalance"
+        required: true
+        type: "number"
+      - name: "profileID"
+        in: "query"
+        description: "java.lang.String profileID"
+        required: true
+        type: "string"
+      responses:
+        201:
+          description: "Successful response 201"
+  /QuoteDataBean/getrandominstance:
+    get:
+      operationId: "getrandominstance"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /TradeConfigJSF/builddatabasetables:
+    post:
+      operationId: "builddatabasetables"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /QuoteDataBean/getopen:
+    get:
+      operationId: "getopen"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /OrdersAlertFilter/dofilter:
+    post:
+      operationId: "dofilter"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2Session2EntityCollection/pingservlet2session2entitycollection_dopost:
+    post:
+      operationId: "pingservlet2session2entitycollection_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TestServlet/testservlet_init:
+    post:
+      operationId: "testservlet_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingJDBCWrite/pingjdbcwrite_init:
+    post:
+      operationId: "pingjdbcwrite_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2Session2EntityCollection/pingservlet2session2entitycollection:
+    post:
+      operationId: "pingservlet2session2entitycollection"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2Session2CMROne2Many/pingservlet2session2cmrone2many_init:
+    post:
+      operationId: "pingservlet2session2cmrone2many_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /AccountDataBean/getbalance:
+    get:
+      operationId: "getbalance"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /PingServlet2Session2Entity/pingservlet2session2entity_init:
+    post:
+      operationId: "pingservlet2session2entity_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeSLSBBean/tradeslsbbean:
+    post:
+      operationId: "tradeslsbbean"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeConfigServlet/tradeconfigservlet:
+    post:
+      operationId: "tradeconfigservlet"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2Session2CMROne2One/pingservlet2session2cmrone2one_init:
+    post:
+      operationId: "pingservlet2session2cmrone2one_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2Session2Entity/pingservlet2session2entity:
+    post:
+      operationId: "pingservlet2session2entity"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /AccountDataBean/getlastlogin:
+    get:
+      operationId: "getlastlogin"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /TradeAction/tradeaction_getquote:
+    get:
+      operationId: "tradeaction_getquote"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "symbol"
+        in: "query"
+        description: "java.lang.String symbol"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+        500:
+          description: "Error response: 500:java.lang.Exception"
+  /PingServlet2Session2CMROne2One/pingservlet2session2cmrone2one:
+    post:
+      operationId: "pingservlet2session2cmrone2one"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /AccountDataBean/getlogincount:
+    get:
+      operationId: "getlogincount"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /TradeConfigJSF/tradeconfigjsf:
+    post:
+      operationId: "tradeconfigjsf"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2SessionLocal/pingservlet2sessionlocal:
+    post:
+      operationId: "pingservlet2sessionlocal"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2DB/pingservlet2db_doget:
+    get:
+      operationId: "pingservlet2db_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+  /TestServlet/testservlet_doget:
+    get:
+      operationId: "testservlet_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+  /PingServlet2Session2EntityCollection/pingservlet2session2entitycollection_doget:
+    get:
+      operationId: "pingservlet2session2entitycollection_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+  /PingServlet2Session2Entity2JSP/pingservlet2session2entity2jsp:
+    post:
+      operationId: "pingservlet2session2entity2jsp"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeServletAction/dologout:
+    post:
+      operationId: "dologout"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2Session2Entity/pingservlet2session2entity_doget:
+    get:
+      operationId: "pingservlet2session2entity_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+  /PingServlet2TwoPhase/pingservlet2twophase_doget:
+    get:
+      operationId: "pingservlet2twophase_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+  /TradeAction/getholdings:
+    get:
+      operationId: "getholdings"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "userID"
+        in: "query"
+        description: "java.lang.String userID"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+        500:
+          description: "Error response: 500:java.lang.Exception"
+  /PingServlet2SessionLocal/pingservlet2sessionlocal_init:
+    post:
+      operationId: "pingservlet2sessionlocal_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeServletAction/doregister:
+    post:
+      operationId: "doregister"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /MarketSummaryWebSocket/marketsummarywebsocket:
+    post:
+      operationId: "marketsummarywebsocket"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /AccountDataBean/getcreationdate:
+    get:
+      operationId: "getcreationdate"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /TradeServletAction/doaccount:
+    post:
+      operationId: "doaccount"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeServletAction/dosell:
+    post:
+      operationId: "dosell"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeServletAction/dowelcome:
+    post:
+      operationId: "dowelcome"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeServletAction/doportfolio:
+    post:
+      operationId: "doportfolio"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeServletAction/dologin:
+    post:
+      operationId: "dologin"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingJDBCWrite/pingjdbcwrite:
+    post:
+      operationId: "pingjdbcwrite"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /TradeAction/sell:
+    post:
+      operationId: "sell"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "userID"
+        in: "query"
+        description: "java.lang.String userID"
+        required: true
+        type: "string"
+      - name: "holdingID"
+        in: "query"
+        description: "java.lang.Integer holdingID"
+        required: true
+        type: "integer"
+      - name: "orderProcessingMode"
+        in: "query"
+        description: "int orderProcessingMode"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "integer"
+        500:
+          description: "Error response: 500:java.lang.Exception"
+  /TradeAppJSF/updateprofile:
+    post:
+      operationId: "updateprofile"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /PingServlet2Session2CMROne2Many/pingservlet2session2cmrone2many_dopost:
+    post:
+      operationId: "pingservlet2session2cmrone2many_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingJDBCRead2JSP/pingjdbcread2jsp_doget:
+    get:
+      operationId: "pingjdbcread2jsp_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+  /TradeAction/ordercompleted:
+    post:
+      operationId: "ordercompleted"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "userID"
+        in: "query"
+        description: "java.lang.String userID"
+        required: true
+        type: "string"
+      - name: "orderID"
+        in: "query"
+        description: "java.lang.Integer orderID"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+        500:
+          description: "Error response: 500:java.lang.Exception"
+  /PingServlet2SessionRemote/pingservlet2sessionremote_dopost:
+    post:
+      operationId: "pingservlet2sessionremote_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2SessionRemote/pingservlet2sessionremote_init:
+    post:
+      operationId: "pingservlet2sessionremote_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /MarketSummarySingleton/marketsummarysingleton:
+    post:
+      operationId: "marketsummarysingleton"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingJDBCRead2JSP/pingjdbcread2jsp:
+    post:
+      operationId: "pingjdbcread2jsp"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet2Session2CMROne2One/pingservlet2session2cmrone2one_dopost:
+    post:
+      operationId: "pingservlet2session2cmrone2one_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+definitions: {}
+

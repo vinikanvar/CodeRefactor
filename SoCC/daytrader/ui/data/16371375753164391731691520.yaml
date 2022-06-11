@@ -1,0 +1,1031 @@
+---
+swagger: "2.0"
+info:
+  version: "0.1"
+  title: "Unassigned_group_service"
+paths:
+  /AccountProfileDataBean/setaddress:
+    post:
+      operationId: "setaddress"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "address"
+        in: "query"
+        description: "java.lang.String address"
+        required: true
+        type: "string"
+      responses:
+        201:
+          description: "Successful response 201"
+  /AccountProfileDataBean/getaddress:
+    get:
+      operationId: "getaddress"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /OrderDataBean/orderdatabean_getsymbol:
+    get:
+      operationId: "orderdatabean_getsymbol"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /AccountProfileDataBean/getaccount:
+    get:
+      operationId: "getaccount"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /RecentStockChangeList/stockchangesinjson:
+    post:
+      operationId: "stockchangesinjson"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "integer"
+  /JsonMessage/jsonmessage:
+    post:
+      operationId: "jsonmessage"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /OrderDataBean/setholding:
+    post:
+      operationId: "setholding"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "holdingId"
+        in: "query"
+        description: "int holdingId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /OrderDataBean/orderdatabean_getquote:
+    get:
+      operationId: "orderdatabean_getquote"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /OrderDataBean/orderdatabean_tohtml:
+    post:
+      operationId: "orderdatabean_tohtml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /AccountProfileDataBean/getpassword:
+    get:
+      operationId: "getpassword"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /AccountProfileDataBean/getcreditcard:
+    get:
+      operationId: "getcreditcard"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /AccountProfileDataBean/setaccount:
+    post:
+      operationId: "setaccount"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "accountId"
+        in: "query"
+        description: "int accountId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /AccountProfileDataBean/setfullname:
+    post:
+      operationId: "setfullname"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "fullName"
+        in: "query"
+        description: "java.lang.String fullName"
+        required: true
+        type: "string"
+      responses:
+        201:
+          description: "Successful response 201"
+  /AccountProfileDataBean/accountprofiledatabean_getuserid:
+    get:
+      operationId: "accountprofiledatabean_getuserid"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /OrderDataBean/getholding:
+    get:
+      operationId: "getholding"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /OrderDataBean/orderdatabean_getorderfee:
+    get:
+      operationId: "orderdatabean_getorderfee"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /ActionDecoder/actiondecoder:
+    post:
+      operationId: "actiondecoder"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /MarketSummaryDataBean/marketsummarydatabean:
+    post:
+      operationId: "marketsummarydatabean"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "TSIA"
+        in: "query"
+        description: "java.math.BigDecimal TSIA"
+        required: true
+        type: "number"
+      - name: "openTSIA"
+        in: "query"
+        description: "java.math.BigDecimal openTSIA"
+        required: true
+        type: "number"
+      - name: "volumeId"
+        in: "query"
+        description: "int volumeId"
+        required: true
+        type: "integer"
+      - name: "topGainersId"
+        in: "query"
+        description: "int topGainersId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /MarketSummaryDataBean/getsummarydate:
+    get:
+      operationId: "getsummarydate"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /JsonEncoder/jsonencoder:
+    post:
+      operationId: "jsonencoder"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /ActionMessage/getdecodedaction:
+    get:
+      operationId: "getdecodedaction"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /AccountProfileDataBean/accountprofiledatabean:
+    post:
+      operationId: "accountprofiledatabean"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "userID"
+        in: "query"
+        description: "java.lang.String userID"
+        required: true
+        type: "string"
+      - name: "password"
+        in: "query"
+        description: "java.lang.String password"
+        required: true
+        type: "string"
+      - name: "fullName"
+        in: "query"
+        description: "java.lang.String fullName"
+        required: true
+        type: "string"
+      - name: "address"
+        in: "query"
+        description: "java.lang.String address"
+        required: true
+        type: "string"
+      - name: "email"
+        in: "query"
+        description: "java.lang.String email"
+        required: true
+        type: "string"
+      - name: "creditCard"
+        in: "query"
+        description: "java.lang.String creditCard"
+        required: true
+        type: "string"
+      responses:
+        201:
+          description: "Successful response 201"
+  /AccountProfileDataBean/setcreditcard:
+    post:
+      operationId: "setcreditcard"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "creditCard"
+        in: "query"
+        description: "java.lang.String creditCard"
+        required: true
+        type: "string"
+      responses:
+        201:
+          description: "Successful response 201"
+  /MarketSummaryDataBean/marketsummarydatabean_getvolume:
+    get:
+      operationId: "marketsummarydatabean_getvolume"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /OrderDataBean/issell:
+    post:
+      operationId: "issell"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "boolean"
+  /OrderDataBean/orderdatabean_getprice:
+    get:
+      operationId: "orderdatabean_getprice"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /OrderDataBean/getorderid:
+    get:
+      operationId: "getorderid"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /RecentStockChangeList/recentstockchangelist:
+    post:
+      operationId: "recentstockchangelist"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /MarketSummaryDataBean/gettopgainers:
+    get:
+      operationId: "gettopgainers"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /OrderDataBean/orderdatabean_getquantity:
+    get:
+      operationId: "orderdatabean_getquantity"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /MarketSummaryDataBean/tojson:
+    post:
+      operationId: "tojson"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "integer"
+  /RecentStockChangeList/isempty:
+    post:
+      operationId: "isempty"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "boolean"
+  /AccountProfileDataBean/accountprofiledatabean_tohtml:
+    post:
+      operationId: "accountprofiledatabean_tohtml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "string"
+  /OrderDataBean/setorderstatus:
+    post:
+      operationId: "setorderstatus"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "orderStatus"
+        in: "query"
+        description: "java.lang.String orderStatus"
+        required: true
+        type: "string"
+      responses:
+        201:
+          description: "Successful response 201"
+  /OrderDataBean/iscompleted:
+    post:
+      operationId: "iscompleted"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "boolean"
+  /OrderDataBean/orderdatabean:
+    post:
+      operationId: "orderdatabean"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "orderType"
+        in: "query"
+        description: "java.lang.String orderType"
+        required: true
+        type: "string"
+      - name: "orderStatus"
+        in: "query"
+        description: "java.lang.String orderStatus"
+        required: true
+        type: "string"
+      - name: "openDate"
+        in: "query"
+        description: "java.util.Date openDate"
+        required: true
+        type: "string"
+      - name: "completionDate"
+        in: "query"
+        description: "java.util.Date completionDate"
+        required: true
+        type: "string"
+      - name: "quantity"
+        in: "query"
+        description: "double quantity"
+        required: true
+        type: "number"
+      - name: "price"
+        in: "query"
+        description: "java.math.BigDecimal price"
+        required: true
+        type: "number"
+      - name: "orderFee"
+        in: "query"
+        description: "java.math.BigDecimal orderFee"
+        required: true
+        type: "number"
+      - name: "accountId"
+        in: "query"
+        description: "int accountId"
+        required: true
+        type: "integer"
+      - name: "quoteId"
+        in: "query"
+        description: "int quoteId"
+        required: true
+        type: "integer"
+      - name: "holdingId"
+        in: "query"
+        description: "int holdingId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /JsonDecoder/jsondecoder:
+    post:
+      operationId: "jsondecoder"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /MarketSummaryDataBean/gettoplosers:
+    get:
+      operationId: "gettoplosers"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /PingInterceptor/pinginterceptor:
+    post:
+      operationId: "pinginterceptor"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /AccountProfileDataBean/setpassword:
+    post:
+      operationId: "setpassword"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "password"
+        in: "query"
+        description: "java.lang.String password"
+        required: true
+        type: "string"
+      responses:
+        201:
+          description: "Successful response 201"
+  /LoginValidator/loginvalidator:
+    post:
+      operationId: "loginvalidator"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /MarketSummaryDataBean/getgainpercent:
+    get:
+      operationId: "getgainpercent"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /AccountProfileDataBean/getfullname:
+    get:
+      operationId: "getfullname"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /OrderDataBean/orderdatabean_getaccount:
+    get:
+      operationId: "orderdatabean_getaccount"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /OrderDataBean/getorderstatus:
+    get:
+      operationId: "getorderstatus"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /OrderDataBean/cancel:
+    post:
+      operationId: "cancel"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /OrderDataBean/getopendate:
+    get:
+      operationId: "getopendate"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /OrderDataBean/getordertype:
+    get:
+      operationId: "getordertype"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /ActionMessage/actionmessage:
+    post:
+      operationId: "actionmessage"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /MarketSummaryDataBean/gettsia:
+    get:
+      operationId: "gettsia"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "number"
+  /PingWebSocketJson/pingwebsocketjson:
+    post:
+      operationId: "pingwebsocketjson"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /AccountProfileDataBean/setemail:
+    post:
+      operationId: "setemail"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "email"
+        in: "query"
+        description: "java.lang.String email"
+        required: true
+        type: "string"
+      responses:
+        201:
+          description: "Successful response 201"
+  /RecentStockChangeList/addstockchange:
+    post:
+      operationId: "addstockchange"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingWebSocketJson$1/pingwebsocketjson$1:
+    post:
+      operationId: "pingwebsocketjson$1"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "this$0Id"
+        in: "query"
+        description: "int this$0Id"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /OrderDataBean/isbuy:
+    post:
+      operationId: "isbuy"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "boolean"
+  /AccountProfileDataBean/getemail:
+    get:
+      operationId: "getemail"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+  /OrderDataBean/setcompletiondate:
+    post:
+      operationId: "setcompletiondate"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "completionDate"
+        in: "query"
+        description: "java.util.Date completionDate"
+        required: true
+        type: "string"
+      responses:
+        201:
+          description: "Successful response 201"
+  /OrderDataBean/getcompletiondate:
+    get:
+      operationId: "getcompletiondate"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "string"
+definitions: {}
+

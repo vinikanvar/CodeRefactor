@@ -1,0 +1,397 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "0.1",
+    "title" : "ibm_service"
+  },
+  "paths" : {
+    "/BackOrderMgr/backordermgr" : {
+      "post" : {
+        "operationId" : "backordermgr",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/BackOrderMgr/setbackorderquantity" : {
+      "post" : {
+        "operationId" : "setbackorderquantity",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "backOrderID",
+          "in" : "query",
+          "description" : "java.lang.String backOrderID",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "quantity",
+          "in" : "query",
+          "description" : "int quantity",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/BackOrderMgr/getbackorderquantity" : {
+      "get" : {
+        "operationId" : "getbackorderquantity",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "backOrderID",
+          "in" : "query",
+          "description" : "java.lang.String backOrderID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/BackOrderMgr/getbackorderinventoryid" : {
+      "get" : {
+        "operationId" : "getbackorderinventoryid",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "backOrderID",
+          "in" : "query",
+          "description" : "java.lang.String backOrderID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/HelpBean/performhelp" : {
+      "post" : {
+        "operationId" : "performhelp",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/BackOrderMgr/updatestock" : {
+      "post" : {
+        "operationId" : "updatestock",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "backOrderID",
+          "in" : "query",
+          "description" : "java.lang.String backOrderID",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "quantity",
+          "in" : "query",
+          "description" : "int quantity",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PopulateDBBean/populatedbbean" : {
+      "post" : {
+        "operationId" : "populatedbbean",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/ListProperties/listproperties" : {
+      "post" : {
+        "operationId" : "listproperties",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/BackOrderMgr/findbackorders" : {
+      "post" : {
+        "operationId" : "findbackorders",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/HelpBean/helpbean" : {
+      "post" : {
+        "operationId" : "helpbean",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/ResetDBBean/resetdbbean" : {
+      "post" : {
+        "operationId" : "resetdbbean",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/Populate/populate" : {
+      "post" : {
+        "operationId" : "populate",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "resetDBId",
+          "in" : "query",
+          "description" : "int resetDBId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "cId",
+          "in" : "query",
+          "description" : "int cId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "lId",
+          "in" : "query",
+          "description" : "int lId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "bId",
+          "in" : "query",
+          "description" : "int bId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "sId",
+          "in" : "query",
+          "description" : "int sId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/AdminServlet/adminservlet" : {
+      "post" : {
+        "operationId" : "adminservlet",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/HelpBean/performdbreset" : {
+      "post" : {
+        "operationId" : "performdbreset",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/BackOrderMgr/deletebackorder" : {
+      "post" : {
+        "operationId" : "deletebackorder",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "backOrderID",
+          "in" : "query",
+          "description" : "java.lang.String backOrderID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/Populate/dopopulate" : {
+      "post" : {
+        "operationId" : "dopopulate",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/ListProperties/load" : {
+      "post" : {
+        "operationId" : "load",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "inStreamId",
+          "in" : "query",
+          "description" : "int inStreamId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          },
+          "500" : {
+            "description" : "Error response: 500:java.io.IOException"
+          }
+        }
+      }
+    },
+    "/ListProperties/getproperties" : {
+      "get" : {
+        "operationId" : "getproperties",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "name",
+          "in" : "query",
+          "description" : "java.lang.String name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { }
+}

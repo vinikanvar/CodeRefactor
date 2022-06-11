@@ -1,0 +1,354 @@
+---
+swagger: "2.0"
+info:
+  version: "0.1"
+  title: "ServletCDI_service"
+paths:
+  /PingServlet31Async/pingservlet31async_init:
+    post:
+      operationId: "pingservlet31async_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServletSetContentLength/pingservletsetcontentlength_init:
+    post:
+      operationId: "pingservletsetcontentlength_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServletCDIBeanManagerViaJNDI/pingservletcdibeanmanagerviajndi:
+    post:
+      operationId: "pingservletcdibeanmanagerviajndi"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServletCDI/pingservletcdi_init:
+    post:
+      operationId: "pingservletcdi_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServletCDIBeanManagerViaJNDI/pingservletcdibeanmanagerviajndi_init:
+    post:
+      operationId: "pingservletcdibeanmanagerviajndi_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingUpgradeServlet/pingupgradeservlet_dopost:
+    post:
+      operationId: "pingupgradeservlet_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet31Async/pingservlet31async:
+    post:
+      operationId: "pingservlet31async"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingUpgradeServlet/pingupgradeservlet_doget:
+    get:
+      operationId: "pingupgradeservlet_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+  /PingUpgradeServlet/pingupgradeservlet:
+    post:
+      operationId: "pingupgradeservlet"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingUpgradeServlet$Listener/pingupgradeservlet$listener:
+    post:
+      operationId: "pingupgradeservlet$listener"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet31Async/pingservlet31async_dopost:
+    post:
+      operationId: "pingservlet31async_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServletSetContentLength/pingservletsetcontentlength:
+    post:
+      operationId: "pingservletsetcontentlength"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServletCDI/pingservletcdi:
+    post:
+      operationId: "pingservletcdi"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingUpgradeServlet$Handler/pingupgradeservlet$handler:
+    post:
+      operationId: "pingupgradeservlet$handler"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServletSetContentLength/pingservletsetcontentlength_doget:
+    get:
+      operationId: "pingservletsetcontentlength_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+  /PingEJBLocalDecorator/pingejblocaldecorator:
+    post:
+      operationId: "pingejblocaldecorator"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServletCDIBeanManagerViaJNDI/pingservletcdibeanmanagerviajndi_doget:
+    get:
+      operationId: "pingservletcdibeanmanagerviajndi_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+        500:
+          description: "Error response: 500:java.io.IOException"
+  /PingServlet31Async$WriteListenerImpl/pingservlet31async$writelistenerimpl:
+    post:
+      operationId: "pingservlet31async$writelistenerimpl"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServletCDIBeanManagerViaCDICurrent/pingservletcdibeanmanagerviacdicurrent:
+    post:
+      operationId: "pingservletcdibeanmanagerviacdicurrent"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServletCDI/pingservletcdi_doget:
+    get:
+      operationId: "pingservletcdi_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+        500:
+          description: "Error response: 500:java.io.IOException"
+  /PingServletSetContentLength/pingservletsetcontentlength_dopost:
+    post:
+      operationId: "pingservletsetcontentlength_dopost"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServletCDIBeanManagerViaCDICurrent/pingservletcdibeanmanagerviacdicurrent_doget:
+    get:
+      operationId: "pingservletcdibeanmanagerviacdicurrent_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+        500:
+          description: "Error response: 500:java.io.IOException"
+  /PingServlet31Async$ReadListenerImpl/pingservlet31async$readlistenerimpl:
+    post:
+      operationId: "pingservlet31async$readlistenerimpl"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingEJBLocal/pingejblocal:
+    post:
+      operationId: "pingejblocal"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingCDIBean/pingcdibean:
+    post:
+      operationId: "pingcdibean"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServletCDIBeanManagerViaCDICurrent/pingservletcdibeanmanagerviacdicurrent_init:
+    post:
+      operationId: "pingservletcdibeanmanagerviacdicurrent_init"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response 201"
+  /PingServlet31Async/pingservlet31async_doget:
+    get:
+      operationId: "pingservlet31async_doget"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+definitions: {}
+

@@ -1,0 +1,874 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "0.1",
+    "title" : "Account_service"
+  },
+  "paths" : {
+    "/AccountBean/performaccount" : {
+      "post" : {
+        "operationId" : "performaccount",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/AccountBean/performaccountupdate" : {
+      "post" : {
+        "operationId" : "performaccountupdate",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/AccountServlet/doget" : {
+      "get" : {
+        "operationId" : "doget",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200"
+          }
+        }
+      }
+    },
+    "/OrderItem/orderitem" : {
+      "post" : {
+        "operationId" : "orderitem",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "orderId",
+          "in" : "query",
+          "description" : "int orderId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "orderID",
+          "in" : "query",
+          "description" : "java.lang.String orderID",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "invId",
+          "in" : "query",
+          "description" : "int invId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "name",
+          "in" : "query",
+          "description" : "java.lang.String name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "pkginfo",
+          "in" : "query",
+          "description" : "java.lang.String pkginfo",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "price",
+          "in" : "query",
+          "description" : "float price",
+          "required" : true,
+          "type" : "number"
+        }, {
+          "name" : "cost",
+          "in" : "query",
+          "description" : "float cost",
+          "required" : true,
+          "type" : "number"
+        }, {
+          "name" : "quantity",
+          "in" : "query",
+          "description" : "int quantity",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "category",
+          "in" : "query",
+          "description" : "int category",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "sellDate",
+          "in" : "query",
+          "description" : "java.lang.String sellDate",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/AccountBean/performregister" : {
+      "post" : {
+        "operationId" : "performregister",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/AccountBean/performorderinfo" : {
+      "post" : {
+        "operationId" : "performorderinfo",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/Customer/customer" : {
+      "post" : {
+        "operationId" : "customer",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "key",
+          "in" : "query",
+          "description" : "java.lang.String key",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "password",
+          "in" : "query",
+          "description" : "java.lang.String password",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "firstName",
+          "in" : "query",
+          "description" : "java.lang.String firstName",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "lastName",
+          "in" : "query",
+          "description" : "java.lang.String lastName",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "addr1",
+          "in" : "query",
+          "description" : "java.lang.String addr1",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "addr2",
+          "in" : "query",
+          "description" : "java.lang.String addr2",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "addrCity",
+          "in" : "query",
+          "description" : "java.lang.String addrCity",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "addrState",
+          "in" : "query",
+          "description" : "java.lang.String addrState",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "addrZip",
+          "in" : "query",
+          "description" : "java.lang.String addrZip",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "phone",
+          "in" : "query",
+          "description" : "java.lang.String phone",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/EMailMessage/emailmessage" : {
+      "post" : {
+        "operationId" : "emailmessage",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "subject",
+          "in" : "query",
+          "description" : "java.lang.String subject",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "htmlContents",
+          "in" : "query",
+          "description" : "java.lang.String htmlContents",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "emailReceiver",
+          "in" : "query",
+          "description" : "java.lang.String emailReceiver",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/ShoppingCartBean/removezeroquantityitems" : {
+      "post" : {
+        "operationId" : "removezeroquantityitems",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/OrderInfo/orderinfo" : {
+      "post" : {
+        "operationId" : "orderinfo",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "orderId",
+          "in" : "query",
+          "description" : "int orderId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/AccountServlet/accountservlet" : {
+      "post" : {
+        "operationId" : "accountservlet",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/LoginInfo/logininfo" : {
+      "post" : {
+        "operationId" : "logininfo",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/AccountBean/performcheckoutfinal" : {
+      "post" : {
+        "operationId" : "performcheckoutfinal",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/AccountBean/performlogin" : {
+      "post" : {
+        "operationId" : "performlogin",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/Order/order" : {
+      "post" : {
+        "operationId" : "order",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/ShoppingCartBean/shoppingcartbean" : {
+      "post" : {
+        "operationId" : "shoppingcartbean",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/AccountServlet/init" : {
+      "post" : {
+        "operationId" : "init",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/CustomerMgr/customermgr" : {
+      "post" : {
+        "operationId" : "customermgr",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/AccountBean/accountbean" : {
+      "post" : {
+        "operationId" : "accountbean",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/ShoppingCartBean/getitems" : {
+      "get" : {
+        "operationId" : "getitems",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/ShoppingCartBean/additem" : {
+      "post" : {
+        "operationId" : "additem",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "new_itemId",
+          "in" : "query",
+          "description" : "int new_itemId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/AccountServlet/dopost" : {
+      "post" : {
+        "operationId" : "dopost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/CustomerMgr/createcustomer" : {
+      "post" : {
+        "operationId" : "createcustomer",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "customerID",
+          "in" : "query",
+          "description" : "java.lang.String customerID",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "password",
+          "in" : "query",
+          "description" : "java.lang.String password",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "firstName",
+          "in" : "query",
+          "description" : "java.lang.String firstName",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "lastName",
+          "in" : "query",
+          "description" : "java.lang.String lastName",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "addr1",
+          "in" : "query",
+          "description" : "java.lang.String addr1",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "addr2",
+          "in" : "query",
+          "description" : "java.lang.String addr2",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "addrCity",
+          "in" : "query",
+          "description" : "java.lang.String addrCity",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "addrState",
+          "in" : "query",
+          "description" : "java.lang.String addrState",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "addrZip",
+          "in" : "query",
+          "description" : "java.lang.String addrZip",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "phone",
+          "in" : "query",
+          "description" : "java.lang.String phone",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/OrderItem$PK/orderitem$pk" : {
+      "post" : {
+        "operationId" : "orderitem$pk",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "inventoryID",
+          "in" : "query",
+          "description" : "java.lang.String inventoryID",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "argOrder",
+          "in" : "query",
+          "description" : "java.lang.String argOrder",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/MailerBean/mailerbean" : {
+      "post" : {
+        "operationId" : "mailerbean",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/ShoppingCartBean/getsubtotalcost" : {
+      "get" : {
+        "operationId" : "getsubtotalcost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "number"
+            }
+          }
+        }
+      }
+    },
+    "/AccountBean/performlogincomplete" : {
+      "post" : {
+        "operationId" : "performlogincomplete",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/MailerAppException/mailerappexception" : {
+      "post" : {
+        "operationId" : "mailerappexception",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "str",
+          "in" : "query",
+          "description" : "java.lang.String str",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/AccountBean/performcompletecheckout" : {
+      "post" : {
+        "operationId" : "performcompletecheckout",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/ShoppingCartBean/createorder" : {
+      "post" : {
+        "operationId" : "createorder",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "customerID",
+          "in" : "query",
+          "description" : "java.lang.String customerID",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "billName",
+          "in" : "query",
+          "description" : "java.lang.String billName",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "billAddr1",
+          "in" : "query",
+          "description" : "java.lang.String billAddr1",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "billAddr2",
+          "in" : "query",
+          "description" : "java.lang.String billAddr2",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "billCity",
+          "in" : "query",
+          "description" : "java.lang.String billCity",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "billState",
+          "in" : "query",
+          "description" : "java.lang.String billState",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "billZip",
+          "in" : "query",
+          "description" : "java.lang.String billZip",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "billPhone",
+          "in" : "query",
+          "description" : "java.lang.String billPhone",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shipName",
+          "in" : "query",
+          "description" : "java.lang.String shipName",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shipAddr1",
+          "in" : "query",
+          "description" : "java.lang.String shipAddr1",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shipAddr2",
+          "in" : "query",
+          "description" : "java.lang.String shipAddr2",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shipCity",
+          "in" : "query",
+          "description" : "java.lang.String shipCity",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shipState",
+          "in" : "query",
+          "description" : "java.lang.String shipState",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shipZip",
+          "in" : "query",
+          "description" : "java.lang.String shipZip",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shipPhone",
+          "in" : "query",
+          "description" : "java.lang.String shipPhone",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "creditCard",
+          "in" : "query",
+          "description" : "java.lang.String creditCard",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "ccNum",
+          "in" : "query",
+          "description" : "java.lang.String ccNum",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "ccExpireMonth",
+          "in" : "query",
+          "description" : "java.lang.String ccExpireMonth",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "ccExpireYear",
+          "in" : "query",
+          "description" : "java.lang.String ccExpireYear",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "cardHolder",
+          "in" : "query",
+          "description" : "java.lang.String cardHolder",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "shippingMethodId",
+          "in" : "query",
+          "description" : "int shippingMethodId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/MailAction/mailaction" : {
+      "post" : {
+        "operationId" : "mailaction",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { }
+}

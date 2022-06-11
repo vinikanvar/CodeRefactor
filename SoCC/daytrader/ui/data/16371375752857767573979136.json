@@ -1,0 +1,622 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "0.1",
+    "title" : "OrderCount_service"
+  },
+  "paths" : {
+    "/TradeDirect/updatequotepricevolumeint" : {
+      "post" : {
+        "operationId" : "updatequotepricevolumeint",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "symbol",
+          "in" : "query",
+          "description" : "java.lang.String symbol",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "changeFactor",
+          "in" : "query",
+          "description" : "java.math.BigDecimal changeFactor",
+          "required" : true,
+          "type" : "number"
+        }, {
+          "name" : "sharesTraded",
+          "in" : "query",
+          "description" : "double sharesTraded",
+          "required" : true,
+          "type" : "number"
+        }, {
+          "name" : "publishQuotePriceChange",
+          "in" : "query",
+          "description" : "boolean publishQuotePriceChange",
+          "required" : true,
+          "type" : "boolean"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "integer"
+            }
+          },
+          "500" : {
+            "description" : "Error response: 500:java.lang.Exception"
+          }
+        }
+      }
+    },
+    "/PingJSONP/pingjsonp_doget" : {
+      "get" : {
+        "operationId" : "pingjsonp_doget",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200"
+          }
+        }
+      }
+    },
+    "/PingServlet31AsyncRead/pingservlet31asyncread" : {
+      "post" : {
+        "operationId" : "pingservlet31asyncread",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingManagedExecutor/init" : {
+      "post" : {
+        "operationId" : "init",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingManagedExecutor/dopost" : {
+      "post" : {
+        "operationId" : "dopost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingSession3/pingsession3_doget" : {
+      "get" : {
+        "operationId" : "pingsession3_doget",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200"
+          }
+        }
+      }
+    },
+    "/DTStreamer3MDB/onmessage" : {
+      "post" : {
+        "operationId" : "onmessage",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingManagedExecutor/pingmanagedexecutor" : {
+      "post" : {
+        "operationId" : "pingmanagedexecutor",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet31AsyncRead/pingservlet31asyncread_doget" : {
+      "get" : {
+        "operationId" : "pingservlet31asyncread_doget",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200"
+          }
+        }
+      }
+    },
+    "/PingServlet31AsyncRead/pingservlet31asyncread_dopost" : {
+      "post" : {
+        "operationId" : "pingservlet31asyncread_dopost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingSession3/pingsession3" : {
+      "post" : {
+        "operationId" : "pingsession3",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingSession3/pingsession3_init" : {
+      "post" : {
+        "operationId" : "pingsession3_init",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/TradeWebContextListener/tradewebcontextlistener" : {
+      "post" : {
+        "operationId" : "tradewebcontextlistener",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/TradeDirect/getquote" : {
+      "get" : {
+        "operationId" : "getquote",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "connId",
+          "in" : "query",
+          "description" : "int connId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "symbol",
+          "in" : "query",
+          "description" : "java.lang.String symbol",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          },
+          "500" : {
+            "description" : "Error response: 500:java.lang.Exception"
+          }
+        }
+      }
+    },
+    "/PingServlet31AsyncRead/pingservlet31asyncread_init" : {
+      "post" : {
+        "operationId" : "pingservlet31asyncread_init",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/DTStreamer3MDB/dtstreamer3mdb" : {
+      "post" : {
+        "operationId" : "dtstreamer3mdb",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingJSONP/pingjsonp" : {
+      "post" : {
+        "operationId" : "pingjsonp",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/ExplicitGC/explicitgc_doget" : {
+      "get" : {
+        "operationId" : "explicitgc_doget",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200"
+          }
+        }
+      }
+    },
+    "/PingJSONP/pingjsonp_dopost" : {
+      "post" : {
+        "operationId" : "pingjsonp_dopost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/TradeDirect/tradedirect" : {
+      "post" : {
+        "operationId" : "tradedirect",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "inSession",
+          "in" : "query",
+          "description" : "boolean inSession",
+          "required" : true,
+          "type" : "boolean"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingJSONP/pingjsonp_init" : {
+      "post" : {
+        "operationId" : "pingjsonp_init",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingManagedExecutor$1/pingmanagedexecutor$1" : {
+      "post" : {
+        "operationId" : "pingmanagedexecutor$1",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/RunStatsDataBean/runstatsdatabean" : {
+      "post" : {
+        "operationId" : "runstatsdatabean",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/ExplicitGC/explicitgc" : {
+      "post" : {
+        "operationId" : "explicitgc",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingManagedExecutor/doget" : {
+      "get" : {
+        "operationId" : "doget",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200"
+          }
+        }
+      }
+    },
+    "/ExplicitGC/explicitgc_dopost" : {
+      "post" : {
+        "operationId" : "explicitgc_dopost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/TradeDirect/checkdbproductname" : {
+      "post" : {
+        "operationId" : "checkdbproductname",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "500" : {
+            "description" : "Error response: 500:java.lang.Exception"
+          }
+        }
+      }
+    },
+    "/PingSession3Object/pingsession3object" : {
+      "post" : {
+        "operationId" : "pingsession3object",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet31AsyncRead$ReadListenerImpl/pingservlet31asyncread$readlistenerimpl" : {
+      "post" : {
+        "operationId" : "pingservlet31asyncread$readlistenerimpl",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/KeySequenceDirect/keysequencedirect" : {
+      "post" : {
+        "operationId" : "keysequencedirect",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/TradeDirect/resettrade" : {
+      "post" : {
+        "operationId" : "resettrade",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "deleteAll",
+          "in" : "query",
+          "description" : "boolean deleteAll",
+          "required" : true,
+          "type" : "boolean"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "integer"
+            }
+          },
+          "500" : {
+            "description" : "Error response: 500:java.lang.Exception"
+          }
+        }
+      }
+    },
+    "/ExplicitGC/explicitgc_init" : {
+      "post" : {
+        "operationId" : "explicitgc_init",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/TradeDirect/getconnpublic" : {
+      "get" : {
+        "operationId" : "getconnpublic",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          },
+          "500" : {
+            "description" : "Error response: 500:java.lang.Exception"
+          }
+        }
+      }
+    },
+    "/PingSession3/pingsession3_dopost" : {
+      "post" : {
+        "operationId" : "pingsession3_dopost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { }
+}

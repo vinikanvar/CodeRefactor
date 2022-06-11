@@ -1,0 +1,1027 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "0.1",
+    "title" : "Inventory_service"
+  },
+  "paths" : {
+    "/ShoppingItem/shoppingitem" : {
+      "post" : {
+        "operationId" : "shoppingitem",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "key",
+          "in" : "query",
+          "description" : "java.lang.String key",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "name",
+          "in" : "query",
+          "description" : "java.lang.String name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "heading",
+          "in" : "query",
+          "description" : "java.lang.String heading",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "desc",
+          "in" : "query",
+          "description" : "java.lang.String desc",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "pkginfo",
+          "in" : "query",
+          "description" : "java.lang.String pkginfo",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "image",
+          "in" : "query",
+          "description" : "java.lang.String image",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "price",
+          "in" : "query",
+          "description" : "float price",
+          "required" : true,
+          "type" : "number"
+        }, {
+          "name" : "cost",
+          "in" : "query",
+          "description" : "float cost",
+          "required" : true,
+          "type" : "number"
+        }, {
+          "name" : "quantity",
+          "in" : "query",
+          "description" : "int quantity",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "category",
+          "in" : "query",
+          "description" : "int category",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "notes",
+          "in" : "query",
+          "description" : "java.lang.String notes",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "isPublic",
+          "in" : "query",
+          "description" : "boolean isPublic",
+          "required" : true,
+          "type" : "boolean"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/Inventory/getquantity" : {
+      "get" : {
+        "operationId" : "getquantity",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/CatalogMgr/setitemquantity" : {
+      "post" : {
+        "operationId" : "setitemquantity",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "inventoryID",
+          "in" : "query",
+          "description" : "java.lang.String inventoryID",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "quantity",
+          "in" : "query",
+          "description" : "int quantity",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/ImageServlet/imageservlet_doget" : {
+      "get" : {
+        "operationId" : "imageservlet_doget",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200"
+          }
+        }
+      }
+    },
+    "/CatalogMgr/catalogmgr" : {
+      "post" : {
+        "operationId" : "catalogmgr",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/Inventory/getname" : {
+      "get" : {
+        "operationId" : "getname",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/Inventory/setbackorder" : {
+      "post" : {
+        "operationId" : "setbackorder",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "backOrderId",
+          "in" : "query",
+          "description" : "int backOrderId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/BackOrder/setorderdate" : {
+      "post" : {
+        "operationId" : "setorderdate",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "orderDate",
+          "in" : "query",
+          "description" : "long orderDate",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/BackOrderItem/getsupplierorderid" : {
+      "get" : {
+        "operationId" : "getsupplierorderid",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/Inventory/inventory" : {
+      "post" : {
+        "operationId" : "inventory",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "itemId",
+          "in" : "query",
+          "description" : "int itemId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/BackOrder/backorder_getstatus" : {
+      "get" : {
+        "operationId" : "backorder_getstatus",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/Inventory/getinventoryid" : {
+      "get" : {
+        "operationId" : "getinventoryid",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/ShoppingBean/performrecalculate" : {
+      "post" : {
+        "operationId" : "performrecalculate",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/ShoppingBean/performshopping" : {
+      "post" : {
+        "operationId" : "performshopping",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/ShoppingBean/shoppingbean" : {
+      "post" : {
+        "operationId" : "shoppingbean",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/BackOrderItem/setinventoryquantity" : {
+      "post" : {
+        "operationId" : "setinventoryquantity",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "quantity",
+          "in" : "query",
+          "description" : "int quantity",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/BackOrderItem/getinventory" : {
+      "get" : {
+        "operationId" : "getinventory",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/BackOrderItem/getorderdate" : {
+      "get" : {
+        "operationId" : "getorderdate",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/CatalogMgr/catalogmgr_additem" : {
+      "post" : {
+        "operationId" : "catalogmgr_additem",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "itemId",
+          "in" : "query",
+          "description" : "int itemId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "boolean"
+            }
+          }
+        }
+      }
+    },
+    "/ShoppingBean/performproductdetail" : {
+      "post" : {
+        "operationId" : "performproductdetail",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/ShoppingBean/performaddtocart" : {
+      "post" : {
+        "operationId" : "performaddtocart",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/BackOrder/setstatus" : {
+      "post" : {
+        "operationId" : "setstatus",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "status",
+          "in" : "query",
+          "description" : "java.lang.String status",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/BackOrderItem/getstatus" : {
+      "get" : {
+        "operationId" : "getstatus",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/BackOrder/backorder_getquantity" : {
+      "get" : {
+        "operationId" : "backorder_getquantity",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/Inventory/getprice" : {
+      "get" : {
+        "operationId" : "getprice",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "number"
+            }
+          }
+        }
+      }
+    },
+    "/BackOrderItem/getlowdate" : {
+      "get" : {
+        "operationId" : "getlowdate",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/BackOrder/backorder" : {
+      "post" : {
+        "operationId" : "backorder",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "inventoryId",
+          "in" : "query",
+          "description" : "int inventoryId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "quantity",
+          "in" : "query",
+          "description" : "int quantity",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/ShoppingBean/setshippingcost" : {
+      "post" : {
+        "operationId" : "setshippingcost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "shippingCost",
+          "in" : "query",
+          "description" : "float shippingCost",
+          "required" : true,
+          "type" : "number"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/BackOrder/backorder_getinventory" : {
+      "get" : {
+        "operationId" : "backorder_getinventory",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/BackOrderItem/backorderitem" : {
+      "post" : {
+        "operationId" : "backorderitem",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "backOrderId",
+          "in" : "query",
+          "description" : "int backOrderId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/Inventory/getid" : {
+      "get" : {
+        "operationId" : "getid",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/ImageServlet/imageservlet_dopost" : {
+      "post" : {
+        "operationId" : "imageservlet_dopost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/BackOrderItem/getbackorderid" : {
+      "get" : {
+        "operationId" : "getbackorderid",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/ImageServlet/imageservlet_init" : {
+      "post" : {
+        "operationId" : "imageservlet_init",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/BackOrder/backorder_setquantity" : {
+      "post" : {
+        "operationId" : "backorder_setquantity",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "quantity",
+          "in" : "query",
+          "description" : "int quantity",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/ImageServlet/imageservlet" : {
+      "post" : {
+        "operationId" : "imageservlet",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/CatalogMgr/getitemsbycategory" : {
+      "get" : {
+        "operationId" : "getitemsbycategory",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "categoryId",
+          "in" : "query",
+          "description" : "int categoryId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/ShoppingCartContent/shoppingcartcontent" : {
+      "post" : {
+        "operationId" : "shoppingcartcontent",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/Inventory/getminthreshold" : {
+      "get" : {
+        "operationId" : "getminthreshold",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/CatalogMgr/setitemimagebytes" : {
+      "post" : {
+        "operationId" : "setitemimagebytes",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "inventoryID",
+          "in" : "query",
+          "description" : "java.lang.String inventoryID",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "imgbytesId",
+          "in" : "query",
+          "description" : "int imgbytesId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/BackOrderItem/setname" : {
+      "post" : {
+        "operationId" : "setname",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "name",
+          "in" : "query",
+          "description" : "java.lang.String name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/Inventory/setquantity" : {
+      "post" : {
+        "operationId" : "setquantity",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "quantity",
+          "in" : "query",
+          "description" : "int quantity",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/ShoppingBean/performcart" : {
+      "post" : {
+        "operationId" : "performcart",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/CatalogMgr/getiteminventory" : {
+      "get" : {
+        "operationId" : "getiteminventory",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "inventoryID",
+          "in" : "query",
+          "description" : "java.lang.String inventoryID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/ProductBean/productbean" : {
+      "post" : {
+        "operationId" : "productbean",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "inventoryId",
+          "in" : "query",
+          "description" : "int inventoryId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { }
+}
