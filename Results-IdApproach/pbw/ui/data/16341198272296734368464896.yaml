@@ -1,0 +1,18 @@
+---
+swagger: "2.0"
+info:
+  version: "0.1"
+  title: "Unassigned_group_service"
+paths:
+  /ValidatePasswords/validatepasswords:
+    post:
+      operationId: "validatepasswords"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+definitions: {}
+

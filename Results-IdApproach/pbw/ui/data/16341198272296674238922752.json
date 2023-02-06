@@ -1,0 +1,304 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "0.1",
+    "title" : "Utility_group_service"
+  },
+  "paths" : {
+    "/ValidatorUtils/adderrormessage" : {
+      "post" : {
+        "operationId" : "adderrormessage",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/Util/util" : {
+      "post" : {
+        "operationId" : "util",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/Util/getfullshippingmethodstrings" : {
+      "get" : {
+        "operationId" : "getfullshippingmethodstrings",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/ValidatorUtils/validatorutils" : {
+      "post" : {
+        "operationId" : "validatorutils",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/Util/getshippingmethodprice" : {
+      "get" : {
+        "operationId" : "getshippingmethodprice",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "index",
+          "in" : "query",
+          "description" : "int index",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "number"
+            }
+          }
+        }
+      }
+    },
+    "/Util/readtokens" : {
+      "post" : {
+        "operationId" : "readtokens",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "text",
+          "in" : "query",
+          "description" : "java.lang.String text",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "token",
+          "in" : "query",
+          "description" : "java.lang.String token",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/Util/getshippingmethodstrings" : {
+      "get" : {
+        "operationId" : "getshippingmethodstrings",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/Util/debugon" : {
+      "post" : {
+        "operationId" : "debugon",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "boolean"
+            }
+          }
+        }
+      }
+    },
+    "/Util/getcategorystring" : {
+      "get" : {
+        "operationId" : "getcategorystring",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "index",
+          "in" : "query",
+          "description" : "int index",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/Util/util_getproperties" : {
+      "get" : {
+        "operationId" : "util_getproperties",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "name",
+          "in" : "query",
+          "description" : "java.lang.String name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200",
+            "schema" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "/Util/validatestring" : {
+      "post" : {
+        "operationId" : "validatestring",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "input",
+          "in" : "query",
+          "description" : "java.lang.String input",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201",
+            "schema" : {
+              "type" : "boolean"
+            }
+          }
+        }
+      }
+    },
+    "/Util/debug" : {
+      "post" : {
+        "operationId" : "debug",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "msg",
+          "in" : "query",
+          "description" : "java.lang.String msg",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/Util/setdebug" : {
+      "post" : {
+        "operationId" : "setdebug",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        }, {
+          "name" : "val",
+          "in" : "query",
+          "description" : "boolean val",
+          "required" : true,
+          "type" : "boolean"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { }
+}

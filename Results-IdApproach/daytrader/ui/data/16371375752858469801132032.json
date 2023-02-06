@@ -1,0 +1,298 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "0.1",
+    "title" : "ServletServlet_service"
+  },
+  "paths" : {
+    "/PingServlet2ServletRcv/pingservlet2servletrcv" : {
+      "post" : {
+        "operationId" : "pingservlet2servletrcv",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2JNDI/pingservlet2jndi_doget" : {
+      "get" : {
+        "operationId" : "pingservlet2jndi_doget",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200"
+          }
+        }
+      }
+    },
+    "/PingServlet2JNDI/pingservlet2jndi_init" : {
+      "post" : {
+        "operationId" : "pingservlet2jndi_init",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2PDF/pingservlet2pdf_doget" : {
+      "get" : {
+        "operationId" : "pingservlet2pdf_doget",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200"
+          }
+        }
+      }
+    },
+    "/PingServlet2Servlet/pingservlet2servlet_doget" : {
+      "get" : {
+        "operationId" : "pingservlet2servlet_doget",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200"
+          }
+        }
+      }
+    },
+    "/PingServlet2JNDI/pingservlet2jndi" : {
+      "post" : {
+        "operationId" : "pingservlet2jndi",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2Jsp/pingservlet2jsp_dopost" : {
+      "post" : {
+        "operationId" : "pingservlet2jsp_dopost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2Jsp/pingservlet2jsp_doget" : {
+      "get" : {
+        "operationId" : "pingservlet2jsp_doget",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200"
+          }
+        }
+      }
+    },
+    "/PingServlet2Jsp/pingservlet2jsp" : {
+      "post" : {
+        "operationId" : "pingservlet2jsp",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2PDF/pingservlet2pdf" : {
+      "post" : {
+        "operationId" : "pingservlet2pdf",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2Servlet/pingservlet2servlet_dopost" : {
+      "post" : {
+        "operationId" : "pingservlet2servlet_dopost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2ServletRcv/pingservlet2servletrcv_dopost" : {
+      "post" : {
+        "operationId" : "pingservlet2servletrcv_dopost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2Servlet/pingservlet2servlet" : {
+      "post" : {
+        "operationId" : "pingservlet2servlet",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingBean/pingbean" : {
+      "post" : {
+        "operationId" : "pingbean",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2PDF/pingservlet2pdf_dopost" : {
+      "post" : {
+        "operationId" : "pingservlet2pdf_dopost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2ServletRcv/pingservlet2servletrcv_doget" : {
+      "get" : {
+        "operationId" : "pingservlet2servletrcv_doget",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200"
+          }
+        }
+      }
+    },
+    "/PingServlet2ServletRcv/pingservlet2servletrcv_init" : {
+      "post" : {
+        "operationId" : "pingservlet2servletrcv_init",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2JNDI/pingservlet2jndi_dopost" : {
+      "post" : {
+        "operationId" : "pingservlet2jndi_dopost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { }
+}

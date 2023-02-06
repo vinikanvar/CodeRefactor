@@ -1,0 +1,197 @@
+---
+swagger: "2.0"
+info:
+  version: "0.1"
+  title: "Supplier_service"
+paths:
+  /SuppliersBean/suppliersbean:
+    post:
+      operationId: "suppliersbean"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters: []
+      responses:
+        201:
+          description: "Successful response 201"
+  /SuppliersBean/getsupplier:
+    get:
+      operationId: "getsupplier"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response 200"
+          schema:
+            type: "integer"
+  /SuppliersBean/updatesupplier:
+    post:
+      operationId: "updatesupplier"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "supplierID"
+        in: "query"
+        description: "java.lang.String supplierID"
+        required: true
+        type: "string"
+      - name: "name"
+        in: "query"
+        description: "java.lang.String name"
+        required: true
+        type: "string"
+      - name: "street"
+        in: "query"
+        description: "java.lang.String street"
+        required: true
+        type: "string"
+      - name: "city"
+        in: "query"
+        description: "java.lang.String city"
+        required: true
+        type: "string"
+      - name: "state"
+        in: "query"
+        description: "java.lang.String state"
+        required: true
+        type: "string"
+      - name: "zip"
+        in: "query"
+        description: "java.lang.String zip"
+        required: true
+        type: "string"
+      - name: "phone"
+        in: "query"
+        description: "java.lang.String phone"
+        required: true
+        type: "string"
+      - name: "url"
+        in: "query"
+        description: "java.lang.String url"
+        required: true
+        type: "string"
+      responses:
+        201:
+          description: "Successful response 201"
+          schema:
+            type: "integer"
+  /Supplier/supplier:
+    post:
+      operationId: "supplier"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "supplierID"
+        in: "query"
+        description: "java.lang.String supplierID"
+        required: true
+        type: "string"
+      - name: "name"
+        in: "query"
+        description: "java.lang.String name"
+        required: true
+        type: "string"
+      - name: "street"
+        in: "query"
+        description: "java.lang.String street"
+        required: true
+        type: "string"
+      - name: "city"
+        in: "query"
+        description: "java.lang.String city"
+        required: true
+        type: "string"
+      - name: "state"
+        in: "query"
+        description: "java.lang.String state"
+        required: true
+        type: "string"
+      - name: "zip"
+        in: "query"
+        description: "java.lang.String zip"
+        required: true
+        type: "string"
+      - name: "phone"
+        in: "query"
+        description: "java.lang.String phone"
+        required: true
+        type: "string"
+      - name: "url"
+        in: "query"
+        description: "java.lang.String url"
+        required: true
+        type: "string"
+      responses:
+        201:
+          description: "Successful response 201"
+  /SuppliersBean/createsupplier:
+    post:
+      operationId: "createsupplier"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "callerId"
+        in: "query"
+        description: "int callerId"
+        required: true
+        type: "integer"
+      - name: "supplierID"
+        in: "query"
+        description: "java.lang.String supplierID"
+        required: true
+        type: "string"
+      - name: "name"
+        in: "query"
+        description: "java.lang.String name"
+        required: true
+        type: "string"
+      - name: "street"
+        in: "query"
+        description: "java.lang.String street"
+        required: true
+        type: "string"
+      - name: "city"
+        in: "query"
+        description: "java.lang.String city"
+        required: true
+        type: "string"
+      - name: "state"
+        in: "query"
+        description: "java.lang.String state"
+        required: true
+        type: "string"
+      - name: "zip"
+        in: "query"
+        description: "java.lang.String zip"
+        required: true
+        type: "string"
+      - name: "phone"
+        in: "query"
+        description: "java.lang.String phone"
+        required: true
+        type: "string"
+      - name: "url"
+        in: "query"
+        description: "java.lang.String url"
+        required: true
+        type: "string"
+      responses:
+        201:
+          description: "Successful response 201"
+definitions: {}
+

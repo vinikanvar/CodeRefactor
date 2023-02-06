@@ -1,0 +1,220 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "0.1",
+    "title" : "PingManaged_service"
+  },
+  "paths" : {
+    "/PingServlet2Include/pingservlet2include_dopost" : {
+      "post" : {
+        "operationId" : "pingservlet2include_dopost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingManagedThread/pingmanagedthread" : {
+      "post" : {
+        "operationId" : "pingmanagedthread",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2Include/pingservlet2include_init" : {
+      "post" : {
+        "operationId" : "pingservlet2include_init",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2Include/pingservlet2include" : {
+      "post" : {
+        "operationId" : "pingservlet2include",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2MDBQueue/pingservlet2mdbqueue" : {
+      "post" : {
+        "operationId" : "pingservlet2mdbqueue",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2MDBQueue/pingservlet2mdbqueue_doget" : {
+      "get" : {
+        "operationId" : "pingservlet2mdbqueue_doget",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200"
+          }
+        }
+      }
+    },
+    "/PingServlet2MDBQueue/pingservlet2mdbqueue_init" : {
+      "post" : {
+        "operationId" : "pingservlet2mdbqueue_init",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingManagedThread/pingmanagedthread_doget" : {
+      "get" : {
+        "operationId" : "pingmanagedthread_doget",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200"
+          }
+        }
+      }
+    },
+    "/PingManagedThread$1/pingmanagedthread$1" : {
+      "post" : {
+        "operationId" : "pingmanagedthread$1",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingManagedThread/pingmanagedthread_init" : {
+      "post" : {
+        "operationId" : "pingmanagedthread_init",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingManagedThread/pingmanagedthread_dopost" : {
+      "post" : {
+        "operationId" : "pingmanagedthread_dopost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    },
+    "/PingServlet2Include/pingservlet2include_doget" : {
+      "get" : {
+        "operationId" : "pingservlet2include_doget",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response 200"
+          }
+        }
+      }
+    },
+    "/PingServlet2MDBQueue/pingservlet2mdbqueue_dopost" : {
+      "post" : {
+        "operationId" : "pingservlet2mdbqueue_dopost",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "name" : "callerId",
+          "in" : "query",
+          "description" : "int callerId",
+          "required" : true,
+          "type" : "integer"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Successful response 201"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { }
+}
